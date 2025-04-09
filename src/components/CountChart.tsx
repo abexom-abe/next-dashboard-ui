@@ -1,5 +1,4 @@
 "use client";
-
 import Image from "next/image";
 import {
   RadialBarChart,
@@ -45,12 +44,7 @@ const CountChart = () => {
             barSize={32}
             data={data}
           >
-            <RadialBar
-              //   label={{ position: "insideStart", fill: "#fff" }}
-              background
-              dataKey="count"
-            />
-            {/* <Legend iconSize={10} layout="vertical" verticalAlign="middle" /> */}
+            <RadialBar background dataKey="count" />
           </RadialBarChart>
         </ResponsiveContainer>
         <Image

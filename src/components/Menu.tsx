@@ -117,7 +117,7 @@ const menuItems = [
   },
 ];
 
-function Menu() {
+const Menu = () => {
   return (
     <div className="mt-4 text-sm">
       {menuItems.map((i) => (
@@ -143,6 +143,6 @@ function Menu() {
       ))}
     </div>
   );
-}
+};
 
 export default Menu;

@@ -1,5 +1,4 @@
 "use client";
-
 import Image from "next/image";
 import {
   BarChart,
@@ -15,29 +14,29 @@ import {
 
 const data = [
   {
-    name: "Man",
+    name: "Mon",
     present: 60,
     absent: 40,
   },
   {
     name: "Tue",
-    present: 75,
+    present: 70,
     absent: 60,
   },
   {
     name: "Wed",
     present: 90,
-    absent: 50,
+    absent: 75,
   },
   {
     name: "Thu",
-    present: 20,
-    absent: 30,
+    present: 90,
+    absent: 75,
   },
   {
     name: "Fri",
-    present: 70,
-    absent: 60,
+    present: 65,
+    absent: 55,
   },
 ];
 
@@ -59,10 +58,7 @@ const AttendanceChart = () => {
           />
           <YAxis axisLine={false} tick={{ fill: "#d1d5db" }} tickLine={false} />
           <Tooltip
-            contentStyle={{
-              borderStartEndRadius: "10px",
-              borderColor: "lightgray",
-            }}
+            contentStyle={{ borderRadius: "10px", borderColor: "lightgray" }}
           />
           <Legend
             align="left"

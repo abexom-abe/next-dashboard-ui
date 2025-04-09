@@ -28,7 +28,7 @@ const AdminPage = () => {
             <AttendanceChart />
           </div>
         </div>
-        {/* BUTTOM CHART */}
+        {/* BOTTOM CHART */}
         <div className="w-full h-[500px]">
           <FinanceChart />
         </div>
@@ -36,7 +36,7 @@ const AdminPage = () => {
       {/* RIGHT */}
       <div className="w-full lg:w-1/3 flex flex-col gap-8">
         <EventCalendar />
-        <Announcements />
+        <Announcements/>
       </div>
     </div>
   );
